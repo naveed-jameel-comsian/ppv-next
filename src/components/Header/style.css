@@ -1,0 +1,15 @@
+.filter-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+  }
+  
+  .filter-container.show {
+    max-height: 300px; /* Adjust based on content */
+    opacity: 1;
+  }
+
+.red{
+    color: red;
+}

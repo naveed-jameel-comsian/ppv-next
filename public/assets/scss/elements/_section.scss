@@ -1,0 +1,116 @@
+.movie-wrapper-one {
+  border-radius: 50px;
+  background: var(--bg-primary);
+  margin-top: -40px;
+  margin-left: calc(3vw + 2.4px);
+  margin-right: calc(3vw + 2.4px);
+  position: relative;
+  z-index: 99;
+  padding: 60px 70px;
+  @media #{$md_device}{
+    padding: 30px;
+  }
+
+  .movie-card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-12%);
+  }
+}
+
+.rotate-movie-slider {
+  background-image: url('/assets/images/background/rotate-movie-area-bg.webp');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.trending-slider-two {
+  background: var(--bg-primary);
+}
+
+.privacy-policy {
+  .table-content {
+    border-radius: 20px;
+    background: var(--bg-primary);
+    padding: 40px 30px;
+    position: sticky;
+    top: 40px;
+
+    .content-item {
+      color: #e2e2e2;
+      font-family: var(--heading-font);
+      font-size: 18px;
+      line-height: 1;
+      text-transform: uppercase;
+      border-top: 1px dashed #272727;
+      padding: 10px 0;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      @media #{$lg_mobile}{
+        font-size: 16px;
+      }
+    }
+  }
+  .content-block {
+    .terms {
+      .description {
+        font-size: 18px;
+        margin-bottom: 0;
+        color: #e2e2e2;
+        @media #{$md-device}{
+          font-size: 16px;
+        }
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .terms:not(:first-child) {
+      padding-top: 40px;
+    }
+  }
+}
+
+.about-us {
+  p {
+    color: #e2e2e2;
+  }
+}
+
+.enjoy-favourite-device {
+  .responsive {
+    &--title {
+      font-family: var(--bigShoulder-font);
+      font-size: 70px;
+      font-weight: 900;
+      line-height: 80px;
+      @media #{$lg_device} {
+        font-size: 50px;
+        line-height: 1.2;
+      }
+      @media #{$lg_mobile} {
+        font-size: 30px;
+        line-height: 1.2;
+      }
+    }
+
+    &--description {
+      font-family: var(--jost-font);
+      line-height: 25px;
+    }
+  }
+}
+
+
+.hl-container {
+  padding: 0 70px;
+  @media #{$lg_device}{
+    padding: 0 30px;
+  }
+  @media #{$sm_device}{
+    padding: 0 15px;
+  }
+}

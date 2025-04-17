@@ -1,0 +1,181 @@
+// Restriction Overlay
+.restriction-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  border-radius: 30px;
+  background: rgba($color: #1f1f1f, $alpha: 0.95);
+  backdrop-filter: blur(20px);
+  z-index: 4;
+
+  .title {
+    font-size: 60px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  a.hl-btn {
+    padding: 26px 53px !important;
+  }
+}
+
+.movie-details-banner {
+  background-image: url('/assets/images/hero/video-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 920px;
+  @media #{$lg_device}{
+    height: auto;
+    padding-top: 650px;
+  }
+  @media #{$md_device}{
+    padding-top: 550px;
+  }
+  @media #{$lg_mobile}{
+    padding-top: 500px;
+  }
+  .thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    video {
+      @media #{$xxl_device}{
+        transform: scale(1.5);
+      }
+      @media #{$xxxl_device}{
+        transform: scale(3);
+      }
+    }
+  }
+  .content {
+    padding-top: 27.5vw;
+    position: relative;
+    z-index: 2;
+    .hl-btn {
+      @media #{$lg_mobile}{
+        padding: 14px 13px 12px;
+        font-size: 12px !important;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(149deg, rgba(24, 24, 24, 1) -27.98%, rgba(21, 21, 21, 0.5) 66.5%);
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
+
+  .banner-title {
+    font-size: 110px;
+    font-weight: 600;
+    line-height: 100px;
+    @media #{$md_device}{
+      font-size: 70px;
+    }
+    @media #{$lg_mobile}{
+      font-size: 40px;
+    }
+  }
+}
+
+.movie-details {
+  .description {
+    font-family: Dosis;
+    font-size: 20px;
+    line-height: 27px;
+    @media #{$lg_mobile}{
+      font-size: 16px;
+    }
+  }
+
+  .movie-production {
+    .list {
+      font-family: var(--heading-font);
+      font-size: 25px;
+      text-transform: uppercase;
+      @media #{$lg_mobile}{
+        font-size: 18px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    .value {
+      color: var(--paragraph-color);
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+}
+
+.movie-casting {
+  background: var(--bg-primary);
+
+  .cast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    flex-wrap: wrap;
+    border-top: 1px solid #1e1e1e;
+    border-bottom: 1px solid #1e1e1e;
+
+    &--item {
+      padding: 27px 30px;
+      display: inline-block;
+      position: relative;
+      max-width: 210px;
+      @media #{$laptop_device}{
+        max-width: 180px;
+      }
+      &:not(:last-child) {
+        &::after {
+          content: url('/assets/images/cast/cast-left-line.svg');
+          position: absolute;
+          top: -1px;
+          right: -7.5px;
+          bottom: -1px;
+          @media #{$lg_device}{
+            display: none;
+          }
+        }
+      }
+
+      &:hover {
+        .person {
+          transform: scale(1.1);
+        }
+      }
+    }
+    &--thumb {
+      margin-bottom: 16px;
+      @include maskImage(url('/assets/images/mask/round-star.svg'));
+      img {
+        transition: transform 300ms ease-out;
+      }
+    }
+    &--name {
+      font-size: 25px;
+      font-weight: 500;
+      @media #{$laptop_device}{
+        font-size: 20px;
+      }
+    }
+  }
+}

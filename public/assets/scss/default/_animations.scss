@@ -1,0 +1,54 @@
+/************ animate style ************/
+.top-image-bounce {
+	animation: top-image-bounce 3s infinite ease-in-out;
+}
+.top-image-bounce-2 {
+  animation: top-image-bounce-2 6s infinite ease-in-out;
+}
+.left-image-bounce {
+  animation: left-image-bounce 3s infinite ease-in-out;
+}
+.right-image-bounce {
+  animation: right-image-bounce 3s infinite ease-in-out;
+}
+.spin-image {
+  animation: spin 3s infinite ease-in-out;
+}
+
+@keyframes top-image-bounce {
+  0% {
+    transform: translateY(-8px); }
+  50% {
+    transform: translateY(12px); }
+  100% {
+    transform: translateY(-8px); } 
+}
+@keyframes top-image-bounce-2 {
+  0% {
+    transform: translateY(-4px); }
+  50% {
+    transform: translateY(15px); }
+  100% {
+    transform: translateY(-4px); } 
+}
+@keyframes left-image-bounce {
+  0% {
+    transform: translateX(-5px); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(-5px); } 
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 50%; } }
+
+@keyframes ripple-white3 {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 100px rgba(255, 255, 255, 0);
+  }
+}

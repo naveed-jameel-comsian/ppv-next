@@ -1,0 +1,59 @@
+/*=========================
+    Variables 
+==========================*/
+:root {
+  --primary-color: #fff;
+  --secondary-color: #e2e2e2;
+  --heading-color: #fff;
+  --paragraph-color: #999;
+  --body-bg: #101010;
+
+  --heading-font: "Lowball", sans-serif;
+  --secondary-font: "Dosis", sans-serif;
+  --body-font: "Dosis", sans-serif;
+  --jost-font: "Jost", sans-serif;
+  --bigShoulder-font: "Big Shoulders Display", sans-serif;
+
+  --transition: all 300ms ease-out;
+  // --animate-delay: 0.3s;
+
+  --bg-primary: linear-gradient(95deg, #181818 7.27%, #151515 99.21%);
+  
+  --gradient-color: linear-gradient(to right, #5a0dff -5%, #FF29B8 31.0%, #FF581C);
+  --bg-gradient: linear-gradient(
+    92deg,
+    #5a0dff 0%,
+    #ff29b8 38.6%,
+    #ff581c 97.73%
+  );
+}
+
+// Layouts Variation
+$xxxl_device: "only screen and (min-width: 2399px)";
+$xxl_device: "only screen and (min-width: 1699px)";
+$xl_device: "only screen and (max-width: 1599px)";
+$laptop_device: "only screen and (min-width: 1199px) and (max-width: 1599px)";
+$laptop_device_two: "only screen and (min-width: 1300px) and (max-width: 1599px)";
+$lg_device: "only screen and (max-width: 1199px)";
+$lg_device_two: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md_device: "only screen and (max-width: 991px)";
+$sm_device: "only screen and (max-width: 767px)";
+$lg_mobile: "only screen and (max-width: 575px)";
+$sm_mobile: "only screen and (max-width: 360px)";
+
+// Layouts Variation
+$extra-lg-device: "only screen and (max-width: 1600px)";
+
+$extra-device: "only screen and (min-width: 1400px) and (max-width: 1599px)";
+
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+
+$lg-layout: "only screen and (min-width: 992px) and (max-width: 1199px)";
+
+$md-layout: "only screen and (min-width: 768px) and (max-width: 991px)";
+
+$sm-layout: "only screen and (min-width: 576px) and (max-width: 767px)";
+
+$lg-mobile: "only screen and (max-width: 575px)";
+
+$sm-mobile: "only screen and (max-width: 479px)";

@@ -1,0 +1,221 @@
+.section-header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 50px;
+  @media #{$sm_device} {
+    font-size: 40px;
+  }
+  &.style-two {
+    gap: 20px;
+    svg {
+      @media #{$lg-mobile} {
+        display: none;
+      }
+    }
+  }
+  span {
+    font-size: inherit;
+    line-height: 1;
+  }
+  .section-title {
+    line-height: 55px;
+  }
+  @media #{$lg-mobile} {
+    font-size: 24px;
+  }
+}
+// Section Title
+.section-title {
+  font-weight: 400;
+  line-height: 55px;
+  text-transform: uppercase;
+
+  &--two {
+    font-family: var(--bigShoulder-font);
+    font-weight: 900;
+  }
+
+  &.large {
+    font-size: 70px;
+    @media #{$lg-mobile} {
+      font-size: 40px;
+    }
+  }
+
+  &.small {
+    font-size: 35px;
+    @media #{$lg-mobile} {
+      font-size: 24px;
+    }
+  }
+
+  @media #{$lg-mobile} {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+// Section Description
+.section-description {
+  color: #e2e2e2;
+  font-family: var(--jost-font);
+  line-height: 24px;
+}
+
+.movie-info-list {
+  color: var(--paragraph-color);
+  font-weight: 500;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  padding-left: 0;
+  &--item {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 10px;
+    background: var(
+      --Gradient,
+      linear-gradient(
+        95deg,
+        rgba(41, 41, 41, 0.5) 7.27%,
+        rgba(30, 30, 30, 0.65) 99.21%
+      )
+    );
+    padding: 10px 12px;
+    line-height: 1;
+    @media #{$md_device} {
+      padding: 10px 9px;
+      font-size: 13px;
+    }
+    @media #{$lg_mobile} {
+      padding: 7px;
+      font-size: 15px;
+      font-size: 12px;
+    }
+    &.style-two {
+      border: 1px solid rgba(255, 255, 255, 0.27);
+      background: linear-gradient(
+        133deg,
+        rgba(255, 255, 255, 0.27) 12.14%,
+        rgba(255, 255, 255, 0.09) 86.99%
+      );
+    }
+  }
+}
+
+.movie-production-info-list {
+  .movie-info-list--item.style-two {
+    border: 0;
+  }
+}
+
+.gradient-link {
+  background-image: linear-gradient(
+    92deg,
+    #5a0dff 0%,
+    #ff29b8 20.6%,
+    #ff581c 45%,
+    #fff 55%
+  );
+  background-size: 220% 100%;
+  background-position: 100% 50%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  transition: all 300ms ease-out;
+  // font-weight: 800;
+
+  &:hover {
+    background-position: 0% 50%;
+  }
+}
+
+.home-one-icon-box {
+  max-width: 340px !important;
+  transition: 0.4s;
+  .elementor-widget-container {
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+  }
+  h3 {
+    font-family: var(--heading-font) !important;
+    letter-spacing: 1px;
+    letter-spacing: 1px !important;
+  }
+  p {
+    font-family: var(--body-font) !important;
+    word-break: auto-phrase;
+    font-size: 17px;
+  }
+  &:hover {
+    .elementor-widget-container {
+      box-shadow: 0px 7px 15px rgba(255, 255, 255, 0.07);
+    }
+    .elementor-image-box-img {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.faq_accordion__header {
+  @media #{$lg-mobile} {
+    font-size: 20px;
+  }
+  span {
+    float: right;
+    svg {
+      @media #{$lg-mobile} {
+        width: 14px;
+      }
+    }
+  }
+}
+
+//slider progress
+.linear-circle {
+  --progress: 0;
+  position: absolute;
+  left: auto;
+  right: -49px;
+  top: 44px;
+  z-index: 10;
+  width: 90px;
+  height: 90px;
+  stroke-width: 1.5px;
+  stroke: url(#bg_gradient);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+  transform: scale(2.2);
+  @media #{$xl_device} {
+    right: -48px;
+    top: 24px;
+    transform: scale(1.7);
+  }
+  @media #{$lg_device} {
+    right: -48px;
+    top: 13px;
+    transform: scale(1.45);
+  }
+  @media #{$md_device} {
+    display: none;
+  }
+}
+
+img {
+  height: auto;
+}
+
+.movie-card-two-container.swiper-backface-hidden .swiper-slide {
+  &:hover {
+    transform: unset !important;
+  }
+}
+
+

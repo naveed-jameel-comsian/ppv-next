@@ -1,0 +1,112 @@
+
+    .seller-page {
+      background-color: #1c1c1c; /* Dark background */
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      padding: 10% 6%;
+    }
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .movies-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+    }
+    .movie-card {
+      background: #2c2c2c;
+      color: #b0b0b0;
+      width: 250px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .video-from-backend{
+        padding: 40px 0px;
+        border: 2px solid white;
+        margin-bottom: 20px;
+        border-radius: 20px;
+
+    }
+
+    
+    .dis-div-container {
+        display: flex;
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        gap: 10px; /* Space between the two divs */
+        margin-top: 0px;
+      }
+      
+      .dis-div {
+        display: flex;
+        align-items: center; /* Vertically centers content inside each div */
+      }
+      
+      
+      .dis-div img {
+        margin-right: 5px; /* Space between the image and text */
+       
+      }
+      .dis-div p{
+    
+        margin-bottom: 0px;
+      }
+      
+      .dis-div-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+      }
+      .dis-div-2 p{
+        margin-bottom: 0px;
+      }
+ 
+    .movie-card:hover,
+    .selected {
+      background: #444;
+      color: white;
+    }
+    .movie-content h5 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+    .selected-movie {
+      background: #444;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+    }
+    .generate-btn {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .generate-btn:hover {
+      background: #0056b3;
+    }
+    .generated-code {
+      background: #222;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+ 

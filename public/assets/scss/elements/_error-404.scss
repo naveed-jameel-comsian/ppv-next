@@ -1,0 +1,55 @@
+/*-----------------------
+    Error 404 Page
+-----------------------*/
+.error-404 {
+  text-align: center;
+  .thumb {
+    margin-bottom: 40px;
+
+    @media #{$lg-mobile} {
+      svg {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+  .title {
+    font-size: 300px;
+    line-height: 0.8;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    .main-title {
+      background: var(--bg-gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hover-title {
+      color: #fff;
+      position: absolute;
+      left: -16px;
+      top: 0;
+    }
+    @media #{$lg-mobile} {
+      font-size: 130px;
+    }
+  }
+  .sub-title {
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    @media #{$lg_mobile}{
+      font-size: 30px;
+    }
+    @media #{$sm_mobile}{
+      font-size: 22px;
+    }
+  }
+  @media #{$lg-mobile} {
+    a.hl-btn.big-btn {
+      padding: 15px 25px;
+    }
+  }
+}
